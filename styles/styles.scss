@@ -1,0 +1,132 @@
+:root {
+    --primary: hsl(0, 100%, 68%);
+    --neutral-dark-2: hsl(230, 29%, 20%);
+    --neutral-dark-1: hsl(230, 11%, 40%);
+    --neutral: hsl(231, 7%, 65%);
+    --neutral-light: hsl(207, 33%, 95%);
+    --heading-font-family: "Barlow Condensed", Arial, sans-serif;
+    --body-font-family: "Barlow", Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 50px 200px;
+}
+
+main {
+    display: flex;
+}
+
+.main-wrapper {
+    width: 50%;
+}
+
+.image-wrapper {
+    width: 675px;
+    position: fixed;
+    overflow: hidden;
+    height: 700px;
+    top: 150px;
+    right: 0;
+
+    img {
+        position: absolute;
+        right: -265px;
+    }
+}
+
+.nav-list {
+    display: flex;
+    padding-left: 0;
+    list-style-type: none;
+
+    &__item {
+        font-family: var(--heading-font-family);
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        a {
+            display: block;
+            width: 100px;
+            text-decoration: none;
+            color: var(--neutral-dark-2);
+        }
+
+        &--login {
+            a {
+                color: var(--neutral);
+            }
+        }
+    }
+}
+
+.product-title {
+    font-family: var(--heading-font-family);
+    text-transform: uppercase;
+
+    &__new {
+        font-weight: bold;
+        margin-right: 15px;
+        padding: 3px 12px;
+        color: var(--neutral-light);
+        border-radius: 15px;
+        background-color: var(--neutral-dark-2);
+    }
+
+    &__title {
+        letter-spacing: 5px;
+
+        color: var(--neutral);
+    }
+}
+
+h1 {
+    font-family: var(--heading-font-family);
+    text-transform: uppercase;
+    color: var(--neutral-dark-2);
+    font-size: 4em;
+}
+
+.intro {
+    font-family: var(--body-font-family);
+    font-size: 1.2em;
+    color: var(--neutral-dark-1);
+}
+
+.demo {
+    display: flex;
+    align-items: center;
+
+    &__button {
+        text-transform: uppercase;
+        background-color: var(--primary);
+        border: 0;
+        border-radius: 5px;
+        color: var(--neutral-light);
+        font-size: 1.1em;
+        padding: 15px 30px;
+        font-family: var(--heading-font-family);
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-right: 30px;
+    }
+
+    &__description {
+        text-transform: uppercase;
+        font-family: var(--heading-font-family);
+        color: var(--neutral);
+        letter-spacing: 5px;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 50px auto;
+    font-family: var(--body-font-family);
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
