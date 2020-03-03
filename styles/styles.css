@@ -29,10 +29,6 @@ nav {
     margin-right: 140px;
 }
 
-.nav-button {
-    display: none;
-}
-
 .nav-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -87,6 +83,20 @@ nav {
     left: 25px;
     content: "\00B7";
     color: var(--neutral-light);
+}
+
+.nav-button {
+    display: none;
+    width: 24px;
+    height: 16px;
+}
+
+.nav-button::after {
+    content: url(/images/icon-hamburger.svg);
+}
+
+.nav-button__open-nav::after {
+    content: url(/images/icon-close.svg);
 }
 
 main {
