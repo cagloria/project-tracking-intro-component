@@ -19,29 +19,10 @@
             rel="stylesheet"
         />
 
-        <script>
-            // TODO: Remove resize script after testing
-            window.onload = function() {
-                let counter = (document.getElementById(
-                    "resize-counter"
-                ).innerHTML = window.innerWidth);
-            };
-            window.addEventListener("resize", function() {
-                document.getElementById("resize-counter").innerHTML =
-                    window.innerWidth;
-            });
-        </script>
-
         <title>Frontend Mentor | Project tracking intro component</title>
     </head>
 
     <body>
-        <!-- TODO: Remove resize counter after testing -->
-        <span
-            id="resize-counter"
-            style="background-color: yellow; position: fixed; top: 3px; left: 3px"
-        ></span>
-
         <nav>
             <img src="./images/logo.svg" width="32" height="32" alt="Logo" />
 
