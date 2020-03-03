@@ -84,6 +84,17 @@ nav {
     }
 }
 
+.background-graphic {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 365px;
+    border-bottom-left-radius: 40px;
+    background-color: var(--neutral-light);
+}
+
 main {
     margin-top: 100px;
 }
@@ -256,6 +267,10 @@ footer {
         display: block;
     }
 
+    .background-graphic {
+        height: 575px;
+    }
+
     main {
         display: flex;
         flex-direction: column;
@@ -292,6 +307,10 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
+    .background-graphic {
+        height: 475px;
+    }
+
     .image-wrapper {
         height: 242px;
         img {
@@ -303,6 +322,8 @@ footer {
     .product-title {
         display: flex;
         flex-direction: column;
+
+        margin-top: 50px;
         &__new {
             width: fit-content;
             margin-right: 0;

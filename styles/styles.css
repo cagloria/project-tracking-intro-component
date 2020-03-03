@@ -100,6 +100,17 @@ nav {
     content: url(/images/icon-close.svg);
 }
 
+.background-graphic {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 365px;
+    border-bottom-left-radius: 40px;
+    background-color: var(--neutral-light);
+}
+
 main {
     margin-top: 100px;
 }
@@ -276,6 +287,9 @@ footer {
     .nav-button {
         display: block;
     }
+    .background-graphic {
+        height: 575px;
+    }
     main {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -319,6 +333,9 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
+    .background-graphic {
+        height: 475px;
+    }
     .image-wrapper {
         height: 242px;
     }
@@ -334,6 +351,7 @@ footer {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+        margin-top: 50px;
     }
     .product-title__new {
         width: -webkit-fit-content;
