@@ -161,6 +161,7 @@ h1 {
         font-weight: bold;
         margin-right: 30px;
         padding: 15px 30px;
+        transition: background-color 0.3s;
         letter-spacing: 1px;
         text-transform: uppercase;
         color: var(--neutral-light);
@@ -171,7 +172,7 @@ h1 {
 
     &__button:hover {
         cursor: pointer;
-        background-color: hsl(0, 100%, 80%);
+        background-color: hsl(0, 100%, 75%);
     }
 
     &__description {
@@ -322,7 +323,6 @@ footer {
     .product-title {
         display: flex;
         flex-direction: column;
-
         margin-top: 50px;
         &__new {
             width: fit-content;

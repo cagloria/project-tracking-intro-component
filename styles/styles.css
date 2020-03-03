@@ -185,6 +185,8 @@ h1 {
     font-weight: bold;
     margin-right: 30px;
     padding: 15px 30px;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--neutral-light);
@@ -195,7 +197,7 @@ h1 {
 
 .demo__button:hover {
     cursor: pointer;
-    background-color: #ff9999;
+    background-color: #ff8080;
 }
 
 .demo__description {
