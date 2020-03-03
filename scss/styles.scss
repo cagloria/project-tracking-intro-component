@@ -74,14 +74,14 @@ nav {
     display: none;
     width: 24px;
     height: 16px;
-}
+    cursor: pointer;
+    &::after {
+        content: url(/images/icon-hamburger.svg);
+    }
 
-.nav-button::after {
-    content: url(/images/icon-hamburger.svg);
-}
-
-.nav-button__open-nav::after {
-    content: url(/images/icon-close.svg);
+    &--open-nav::after {
+        content: url(/images/icon-close.svg);
+    }
 }
 
 main {
@@ -218,21 +218,27 @@ footer {
     }
 
     .nav-list {
-        position: fixed;
+        position: absolute;
         z-index: 1;
         top: 100px;
         left: 50%;
+        display: none;
         flex-direction: column;
         margin-left: -150px;
         padding: 10px 0;
         background-color: #fff;
         box-shadow: 0 0 5px hsla(0, 0%, 19%, 0.219);
+        &--open {
+            display: flex;
+        }
+
         &__item {
             line-height: 40px;
+            width: 300px;
+            margin: 0;
         }
 
         &__separator {
-            width: 300px;
             height: 20px;
             background-color: #fff;
         }
