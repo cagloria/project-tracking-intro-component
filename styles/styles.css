@@ -234,10 +234,11 @@ footer {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+        margin-left: -150px;
         padding: 10px 0;
         background-color: #fff;
-        -webkit-box-shadow: 0 0 5px #ccc;
-        box-shadow: 0 0 5px #ccc;
+        -webkit-box-shadow: 0 0 5px rgba(48, 48, 48, 0.219);
+        box-shadow: 0 0 5px rgba(48, 48, 48, 0.219);
     }
     .nav-list__item {
         line-height: 40px;
@@ -301,11 +302,11 @@ footer {
 
 @media only screen and (max-width: 500px) {
     .image-wrapper {
-        height: 232px;
+        height: 242px;
     }
     .image-wrapper img {
         left: -20px;
-        width: 480px;
+        width: 500px;
     }
     .product-title {
         display: -webkit-box;

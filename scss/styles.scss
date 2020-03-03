@@ -208,15 +208,15 @@ footer {
     }
 
     .nav-list {
-        // FIXME: Adjust positioning of nav-list
         position: fixed;
         z-index: 1;
         top: 100px;
         left: 50%;
         flex-direction: column;
+        margin-left: -150px;
         padding: 10px 0;
         background-color: #fff;
-        box-shadow: 0 0 5px #ccc;
+        box-shadow: 0 0 5px hsla(0, 0%, 19%, 0.219);
         &__item {
             line-height: 40px;
         }
@@ -277,10 +277,10 @@ footer {
 
 @media only screen and (max-width: 500px) {
     .image-wrapper {
-        height: 232px;
+        height: 242px;
         img {
             left: -20px;
-            width: 480px;
+            width: 500px;
         }
     }
 
